@@ -7,16 +7,12 @@
 
 .flexbox-wrapper {
     display: flex;
-    flex-direction: column;   
-    height: 10%;
+    flex-direction: column; 
+    height: 10%;   
 }
 
 .align-content {
     align-items: center; 
-}
-
-.space-evenly {
-    justify-content: space-between; 
 }
 
 .height {
@@ -73,5 +69,69 @@ h1 {
     font-weight: normal; 
 }
 
+@media screen and (min-width: 768px){
+    .flexbox-container {
+    height: 100vh;   
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+    header {
+        
+        order: 1; 
+    }
+
+    aside { 
+        order: 2; 
+        margin-bottom: 0; 
+        margin-right: 5px;  
+    }
+
+    main {
+        order: 3; 
+    }
+
+    footer {
+        order: 4; 
+    }
+
+    .box {
+        width: 28%; 
+    }
+
+    header.box {
+        width: 80%; 
+    }
+
+    main.box {
+        width: 50%; 
+    }
+
+    footer.box {
+        width: 80%; 
+    }
+
+    aside.flexbox-wrapper {
+        height: 65%;
+    }
+
+    article {
+        magin: 0; 
+    }
+
+    main.flexbox-wrapper {
+        height: 65%; 
+    }
+
+    header.flexbox-wrapper {
+        height: 15%; 
+    }
+
+    footer.flexbox-wrapper {
+        height: 15%; 
+    }
+
+    
+}
 
 
